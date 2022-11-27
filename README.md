@@ -1,6 +1,8 @@
 # linux-basics
 Curso rápido de introdução ao Linux
 
+Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um ambiente Ubuntu 22.04 via WSL2.
+
 ![Tux](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/220px-Tux.svg.png)
 
 ## Quem usa Linux?
@@ -67,16 +69,74 @@ Curso rápido de introdução ao Linux
 
  - diretórios e caminhos
     - `/caminho/para/meu/arquivo.txt`
- - ls
-    - Lista todos os arquivos em uma pasta
-    ```console
-    canalli@pop-os:~$ ls
+    - Não confunda barra `/` com contra-barra `\`
+ - `cd`
+    - entra em um diretório
+    - entrando na pasta `/`, raiz (root) do sistema
+    ```bash
+    cd /
     ```
- - cd
- - mkdir
- - cp
- - mv
- - rm
+    - entrando na pasta `bin`
+    ```bash
+    cd bin
+    ```
+    - voltando para a pasta 'acima'
+    ```bash
+    cd ..
+    ```
+    - indo para a pasta `~`, a home do seu usuário
+    ```bash
+    cd ~
+    ```
+    
+ - `ls`
+    - Lista todos os arquivos em uma pasta
+    ```bash
+    ls
+    ```
+    - Variação exibindo detalhes
+    ```bash
+    ls -l
+    ```
+    - Variação apresentando os ponteiros `.` e `..`
+    ```bash
+    ls -a
+    ```
+
+ - `mkdir`
+    - entrar na `home` e criar uma pasta com meu nome
+    ```bash
+    cd ~
+    mkdir ygor
+    ```
+ - `cp`
+    - entre na pasta downloads do windows, liste os arquivos e faça copia de um deles
+    ```bash
+    cd /mnt/c/Users/<NomeDoUsuarioDoSeuWindows>/Downloads
+    ls
+    cp <meuArquivo.txt> <copiaDoMeuAquivo.txt>
+    ```
+ - `mv`
+    - ainda na pasta Downloads do windows mova um arquivo para a home
+    ```bash
+    ls
+    mv <meuArquivo.txt> ~/
+    cd ~
+    ls
+    ```
+    - ainda na home, renomeie o arquivo
+    ```bash
+    ls
+    mv <meuArquivo.txt> <novoNomeDoArquivo.txt>
+    ls
+    ```
+ - `rm`
+    - remova o arquivo anteriormente movido
+    ```bash
+    ls
+    rm <novoNomeDoArquivo.txt>
+    ls
+    ```
 
 ## Gerenciamento de pacotes
 
@@ -85,6 +145,7 @@ Curso rápido de introdução ao Linux
  
 ## Utilitários
 
+ - man
  - cat
  - less
  - vi/vim
