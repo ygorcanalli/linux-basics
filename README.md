@@ -1,6 +1,8 @@
 # linux-basics
 Curso rápido de introdução ao Linux
 
+![Tux](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/220px-Tux.svg.png)
+
 ## Quem usa Linux?
 
 - Todo mundo com um Smartphone Android usa Linux :)
@@ -21,6 +23,7 @@ Curso rápido de introdução ao Linux
  - [Unix](https://pt.wikipedia.org/wiki/Unix)
     - Revolucionário Sistema Operacional Portátil, Multitarefa e Multiusuário
     - Criado por [Ken Thompson](https://pt.wikipedia.org/wiki/Ken_Thompson) e [Dennis Ritchie](https://pt.wikipedia.org/wiki/Dennis_Ritchie) (e outros) na [Bell Labs](https://pt.wikipedia.org/wiki/Bell_Labs) a partir de 1969
+    - Reescrito em 1973 em [C](https://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o))
     - Amplamente utilizado nas décadas de 70 e 80
     - Define um [padrão](https://pt.wikipedia.org/wiki/POSIX) de Sistemas Operacionais
  - [Minix](https://pt.wikipedia.org/wiki/Minix)
@@ -28,11 +31,11 @@ Curso rápido de introdução ao Linux
     - Desenvolvido pelo [prof. Andrew Tanembaum](https://pt.wikipedia.org/wiki/Andrew_Stuart_Tanenbaum) para lecionar a [disciplina](https://www.amazon.com.br/Sistemas-operacionais-modernos-Andrew-Tanenbaum/dp/8543005671) de Sistemas Operacionais
     - Código distribuído Livremente para a turma
  - [Linux](https://pt.wikipedia.org/wiki/Linux)
-    - Seria um "UNIX do Linus"
     - [Treta histórica](https://pt.wikipedia.org/wiki/Debate_entre_Tanenbaum_e_Torvalds) entre Tanembaum e seu aluno [Linus Torvalds](https://pt.wikipedia.org/wiki/Linus_Torvalds)
-    - Linus decide criar seu próprio Sistema Operacional em 1971
-    - Código publicado na para contribuições na [Usenet](https://pt.wikipedia.org/wiki/Usenet), comunidade de ners de antigamente
-    - Reescrito em 1973 em [C](https://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o))
+    - Linus decide criar um "Minix melhor que o Minix"
+    - Seria um "UNIX do Linus", lançado oficialmente em 1991 
+    - Código publicado na para contribuições na [Usenet](https://pt.wikipedia.org/wiki/Usenet), comunidade de nerds de antigamente
+    - Mascote [Tux](https://pt.wikipedia.org/wiki/Tux)
  - Free Software e GNU
     - Filosofia do [Software Livre](https://pt.wikipedia.org/wiki/Software_livre)
         - A liberdade de executar o programa, para qualquer propósito;
@@ -63,7 +66,12 @@ Curso rápido de introdução ao Linux
 ## Manipulação básica de arquivos
 
  - diretórios e caminhos
+    - `/caminho/para/meu/arquivo.txt`
  - ls
+    - Lista todos os arquivos em uma pasta
+    ```console
+    canalli@pop-os:~$ ls
+    ```
  - cd
  - mkdir
  - cp
