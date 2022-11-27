@@ -7,7 +7,7 @@ Curso rápido de introdução ao Linux
 
 
  - O que é um Sistema Operacional?
-    - Primeiros computadores não possuiam Sistema Operacional (consulte um breve resumo História da Computação [Parte 1](ICC Aula 1.pdf) e [Parte 2](ICC Aula 2.pdf))
+    - Primeiros computadores não possuiam Sistema Operacional (consulte um breve resumo História da Computação [Parte 1](ICC%20Aula%201.pdf) e [Parte 2](ICC%20Aula%202.pdf))
     - Gerencia recursos: processador, memória, disco, periféricos, etc
  - [Unix](https://pt.wikipedia.org/wiki/Unix)
     - Revolucionário Sistema Operacional Portátil, Multitarefa e Multiusuário
