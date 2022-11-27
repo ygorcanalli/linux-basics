@@ -70,8 +70,7 @@ Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um 
  - diretórios e caminhos
     - `/caminho/para/meu/arquivo.txt`
     - Não confunda barra `/` com contra-barra `\`
- - `cd`
-    - entra em um diretório
+ - `cd` - navegar em diretórios
     - entrando na pasta `/`, raiz (root) do sistema
     ```bash
     cd /
@@ -89,7 +88,7 @@ Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um 
     cd ~
     ```
     
- - `ls`
+ - `ls` - listar um diretório
     - Lista todos os arquivos em uma pasta
     ```bash
     ls
@@ -103,20 +102,20 @@ Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um 
     ls -a
     ```
 
- - `mkdir`
+ - `mkdir` - criar diretórios
     - entrar na `home` e criar uma pasta com meu nome
     ```bash
     cd ~
     mkdir ygor
     ```
- - `cp`
+ - `cp` - copiar arquivos
     - entre na pasta downloads do windows, liste os arquivos e faça copia de um deles
     ```bash
     cd /mnt/c/Users/<NomeDoUsuarioDoSeuWindows>/Downloads
     ls
     cp <meuArquivo.txt> <copiaDoMeuAquivo.txt>
     ```
- - `mv`
+ - `mv` - movimentar arquivos
     - ainda na pasta Downloads do windows mova um arquivo para a home
     ```bash
     ls
@@ -130,18 +129,13 @@ Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um 
     mv <meuArquivo.txt> <novoNomeDoArquivo.txt>
     ls
     ```
- - `rm`
+ - `rm` - remover arquivos
     - remova o arquivo anteriormente movido
     ```bash
     ls
     rm <novoNomeDoArquivo.txt>
     ls
     ```
-
-## Gerenciamento de pacotes
-
-- O que são pacotes
-- apt
  
 ## Utilitários
 
@@ -160,7 +154,13 @@ Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um 
  - chgrp
  - formato octal
  - chmod
- 
+
+## Gerenciamento de pacotes
+
+- O que são pacotes
+- apt
+
+
 ## Como continuo?
 
  - Dualboot
