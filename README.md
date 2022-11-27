@@ -5,7 +5,13 @@ Curso rápido de introdução ao Linux
 
 ## Breve Histórico
 
- - Unix
+
+ - O que é um Sistema Operacional?
+    - Primeiros computadores não possuiam Sistema Operacional (consulte um breve resumo História da Computação [Parte 1](ICC Aula 1.pdf) e [Parte 2](ICC Aula 2.pdf))
+    - Gerencia recursos: processador, memória, disco, periféricos, etc
+ - [Unix](https://pt.wikipedia.org/wiki/Unix)
+    - Revolucionário Sistema Operacional Portátil, Multitarefa e Multiusuário
+    - Criado por Ken Thompson e Dennis Ritchie (e outros) na [Bell Labs](https://pt.wikipedia.org/wiki/Bell_Labs)
  - Minix
  - Linux 
  - Free Software e GNU
