@@ -136,16 +136,83 @@ Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um 
     rm <novoNomeDoArquivo.txt>
     ls
     ```
+ - `*` - wildcard todos
+    - use o asterisco para indicar 'todos'
+    - `*` - todos os arquivos de um diretório
+    - `*.pdf` - todos os arquivos pdf
+    - `*.docx` - todos os arquivos docx
+    - `A*` - todos os arquivos iniciados com A
+    - `A*.pdf` - todos os arquivos pdf iniciados com A
+    - copie todos os arquivos pdf de Downloads para sua home
+    ```bash
+    cd /mnt/c/Users/<NomeDoUsuarioDoSeuWindows>/Downloads
+    cp *.pdf ~/
+    cd ~
+    ls
+    ```
  
 ## Utilitários
 
- - man
- - cat
- - less
- - vi/vim
- - touch
- - wget
- - echo
+ - `man` - manual de uso dos comandos
+    - consulte o manual do comando `ls`, use setas para navegar e digite `q` para sair
+    ```bash
+    man ls
+    ```
+    - consulte o manual do comando `rm`
+    ```bash
+    man rm
+    ```
+ - `touch` - criar um arquivo vazio
+    - crie um arquivo vazio `conteudo.txt`
+    ```bash
+    touch conteudo.txt
+    ls
+    ```
+ - `vim` - editor de texto
+    - edite o arquivo criado
+    ```bash
+    vim conteudo.txt
+    ```
+    - digite `a` para entrar no modo edição
+    - escreva alguma coisa
+    - tecle `esc` para sair do modo edição
+    - digite `:w` para salvar
+    - digite `:q` para sair
+    - para um tutorial completo do `vim` use o comando
+    ```bash
+    vimtutor
+    ```
+ - `cat` - imprime o conteúdo de um arquivo de texto no terminal
+    - imprima na tela o conteúdo do arquivo editado no `vim`
+    ```bash
+    cat conteudo.txt
+    ```
+ - less - pagina um conteúdo
+    - útil para arquivos grandes, setas para navegar, `q` para sair
+    ```bash
+    less conteudo.txt
+    ```
+ - `echo` - imprime conteúdo na tela
+    - similar ao `print`
+    - imprima olá mundo
+    ```bash
+    echo "olá mundo!"
+    ```
+    - imprima a variável de ambiente `$HOME`
+    ```bash
+    echo $HOME
+    ```
+    - imprima conteúdo misturado
+    ```bash
+    echo "sou $USER e meus arquivos ficam em $HOME"
+    ```
+ - `wget` - download de arquivos
+    - baixe e pagine o arquivo deste tutorial
+    ```bash
+    wget https://raw.githubusercontent.com/ygorcanalli/linux-basics/main/README.md
+    ls
+    less README.md
+    ```
 
 ## Permissões
 
