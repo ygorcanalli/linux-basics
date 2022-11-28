@@ -187,7 +187,7 @@ Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um 
     ```bash
     cat conteudo.txt
     ```
- - less - pagina um conteúdo
+ - `less` - pagina um conteúdo
     - útil para arquivos grandes, setas para navegar, `q` para sair
     ```bash
     less conteudo.txt
@@ -214,28 +214,94 @@ Curso Ministrado no Colégio Pedro II - Campus Duque de Caxias, considerando um 
     less README.md
     ```
 
-## Permissões
+## Permissões de acesso
 
  - Usuários e grupos
- - chown
- - chgrp
- - formato octal
- - chmod
+    - Cada usuário é uma conta
+    - Cada grupo junta usuários e concede permissões
+    - Cada usuário pode estar em diversos grupos
+ - consulte as permissões dos arquivos em um diretório
+    ```bash
+    ls -l
+    ```
+    - `r` -> read = leitura
+    - `w` -> write = escrita
+    - `x` -> eXecute = execução
+    - 1° usuário, 2° grupo, 3° outros usuários
+    - `-rwxr-x-r--`
+        - usuário pode ler, escrever e executar
+        - grupo pode ler e executar
+        - outros usuários podem apenas ler
+ - `chown` - mudança de propritário (change own)
+    - altere o dono de um arquivo
+    ```bash
+    chown <user> <file>
+    ```
+ - `chmod` - altera as permissões de um arquivo
+    - permissões em formato octal
+        - execução (x) = 1
+        - escrita (w) = 2
+        - leitura (r) = 4
+        - some os valores para combinar permissões
+        - 6 = l+w
+        - 7 = l+w+x
+        - 4 = r
+    - conjunto de três dígitos octais
+        - 1° usuário, 2° grupo, 3° outros usuários
+        - 644 = usuário l+w, grupo e outros apenas r
+        - 777 = todos possuem l+w+x
+        - 751 = usuário l+w+x, grupo r+x, outros apenas x
+    - retire premissão de escrita do `conteudo.txt` e tente editar
+        ```bash
+        chmod 444 conteudo.txt
+        vim conteudo.txt
+        ```
+    - conceda permissão completa a todos os arquivos na home
+        ```bash
+        chown 777 *
+        ```
+- sudo - super do, realize uma tarefa com super privilégios
+    - exige que seu usuário seja administrdor (sudoer)
+    ```bash
+    sudo <comando>
+    ```
 
 ## Gerenciamento de pacotes
 
 - O que são pacotes
-- apt
+    - pedaços de software reutilizáveis em diversos programas
+    - cada pacote possui dependência de outros que usa para funcionar
+    - instalar um programa significa instalar um pacote
+    - instalar o pacote de um programa sifnifica instalar todas as dependências
+- `apt` - gerenciador de pacotes do Ubuntu
+    - instale o pacote w3m
+    ```bash
+    sudo apt install w3m
+    ```
+    - w3m é um navegador web em texto, experimente!
+    ```bash
+    w3m google.com
+    ```
+    - tab avança, shift+tab recua, enter para preencher ou navegar em links
 
 
 ## Como continuo?
 
  - Dualboot
+    - Faça um backup seguro
+    - Baixe a imagem da distro
+        - Sugestão: Ubuntu na última versão LTS (atualmente 22.04)
+    - Crie um pendriver bootavel (BalenaEtchr, UNetBootin, Rufus, etc)
+        - Fuja de baixaki, superdownloads, softonic, uptown, etc!
+    - Habilite o boot USB na BIOS
+    - Reinicie o PC
+    - Siga os passos para instalar
  - Uso como sistema principal
+    - Tente usar para programar
+    - Tente usar no dia-a-dia
+    - Os problemas enfrentados no dia-a-dia serão o treinamento
+ - Boa sorte!
  
-
-
-
 
 ## Referências
 
